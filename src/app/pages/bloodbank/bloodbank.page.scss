@@ -1,0 +1,29 @@
+
+  ion-toggle {
+    --background: rgb(192, 100, 100);
+    --background-checked:rgb(199, 159, 159);
+ 
+    --handle-border-radius: 20px ;
+    --handle-background: red;
+    --handle-background-checked: #000;
+  }
+  ion-button{
+      background-color: #000;
+      
+  }
+  .but{
+     width:225px;
+  }
+  .col {
+    border: none;
+   
+    border-right-style: none;
+}
+
+.col:last-child {
+    border-right: solid 1px grey;
+}
+
+/* .row:last-child .col {
+    border-bottom: solid 1px grey;
+} */
