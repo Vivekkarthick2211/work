@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>matrimony</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+  <ion-item>
+    <ion-label>Looking For a Varan</ion-label>
+    <ion-toggle color="success" [(ngModel)]="mushroomas"></ion-toggle>
+  </ion-item>
+ 
+  </ion-col>
+  <ion-col size="8">
+  <ion-item>
+    <ion-label>Post A Varan </ion-label>
+    <ion-toggle color="success" (click)="fi()" [(ngModel)]="mushrooms"></ion-toggle>
+  </ion-item>
+  <form *ngIf="b">
+   <ion-item>
+    <ion-label >Name</ion-label>
+    <ion-input type="text" ></ion-input>
+   </ion-item>
+   <ion-item>
+    <ion-label >Age</ion-label>
+    <ion-input type="number" ></ion-input>
+   </ion-item>
+   <ion-item>
+    <ion-label >contact</ion-label>
+    <ion-input type="number" ></ion-input>
+   </ion-item>
+   <ion-item>
+    <ion-label >Star</ion-label>
+    <ion-input type="text" ></ion-input>
+   </ion-item>
+   <ion-item>
+    <ion-label >Nachathira</ion-label>
+    <ion-input type="text" ></ion-input>
+   </ion-item>
+   <ion-item>
+    <ion-label >Jathagam</ion-label>
+    <ion-input type="file" ></ion-input>
+   </ion-item>
+   <ion-item>
+    <ion-label >Photo</ion-label>
+    <ion-input type="file" ></ion-input>
+   </ion-item>
+   <ion-list>
+    <ion-item>
+      <ion-label>Are You Physically Challenged</ion-label>
+      <ion-checkbox slot="end" (click)="ki()"></ion-checkbox>
+    </ion-item>
+    <ion-item *ngIf="a==true">
+      <ion-label >Type of Different Ability</ion-label>
+      <ion-input type="text" ></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button class="but">Submit</ion-button>
+  </form>
+</ion-col></ion-row></ion-grid>
+
+
+<!-- Checkboxes in a List -->
+
+<!-- <ion-item>
+  <ion-label ></ion-label>
+  <ion-input type="" ></ion-input>
+</ion-item> -->
+</ion-content>
